@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jira AI Orkestra — 7 AI ajan + 6 insan onay kapısı + 4 work mode ile Jira ticket'ından PR'a.">
+  <title>Jira AI Orkestra — Ticket'tan PR'a, AI + insan birlikte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe atla</a>
+
+  <nav class="nav" aria-label="Ana navigasyon">
+    <div class="nav__brand">🎬 Orkestra</div>
+    <div class="nav__links">
+      <a href="#features" class="nav__link">Özellikler</a>
+      <a href="#how" class="nav__link">Nasıl Çalışır</a>
+      <a href="#pricing" class="nav__link">Fiyatlar</a>
+      <a href="#cta" class="nav__link nav__link--cta">Demo İste</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero__eyebrow">Yazılım geliştirmede yeni nesil</div>
+      <h1 class="hero__title">Jira ticket'ından PR'a<br><span class="accent">%80 AI, %20 sen karar ver</span></h1>
+      <p class="hero__subtitle">7 AI ajan · 6 insan onay kapısı · 4 work mode · 15 adım. Analiz, kod, review, test — tümü otomatik. Sen sadece kritik noktalarda onayla.</p>
+      <div class="hero__cta">
+        <a href="#cta" class="btn btn--primary" data-track="hero-cta">Ücretsiz Demo İste</a>
+        <a href="#how" class="btn btn--ghost">Akışı Gör →</a>
+      </div>
+      <div class="hero__meta">
+        <span>⚡ 30 saniyede kurulum</span>
+        <span>🔐 Self-hosted (on-prem)</span>
+        <span>🌍 KVKK / GDPR uyumlu</span>
+      </div>
+    </section>
+
+    <section class="problem">
+      <h2>Tanıdık geldi mi?</h2>
+      <div class="problem__grid">
+        <div class="problem__item">
+          <span class="problem__emoji">📋</span>
+          <p>"Ticket'tan PR'a kim ne yapıyor belirsiz"</p>
+        </div>
+        <div class="problem__item">
+          <span class="problem__emoji">🔄</span>
+          <p>"Analiz tutarsız, herkes farklı yazıyor"</p>
+        </div>
+        <div class="problem__item">
+          <span class="problem__emoji">📈</span>
+          <p>"Kapsam kayması geç yakalanıyor"</p>
+        </div>
+        <div class="problem__item">
+          <span class="problem__emoji">⏳</span>
+          <p>"Review kuyruğu hep dolu, feedback geç"</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <h2>Nasıl Çalışır? <span class="how__sub">— 15 adım, arka planda</span></h2>
+      <svg class="workflow" role="img" aria-labelledby="wf-title" viewBox="0 0 960 220">
+        <title id="wf-title">Orkestra 15 adımlık iş akışı şeması</title>
+        <defs>
+          <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6aa3ff"/><stop offset="1" stop-color="#a77dff"/></linearGradient>
+        </defs>
+        <g font-family="system-ui" font-size="12" fill="currentColor">
+          <rect x="10" y="90" width="90" height="40" rx="6" fill="url(#g)" opacity=".85"/>
+          <text x="55" y="115" text-anchor="middle" fill="#0a0b10" font-weight="600">1. Jira</text>
+          <rect x="120" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="url(#g)"/>
+          <text x="165" y="115" text-anchor="middle">🤖 Intake</text>
+          <rect x="230" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="url(#g)"/>
+          <text x="275" y="115" text-anchor="middle">🤖 Analyst</text>
+          <rect x="340" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="#ffa46a"/>
+          <text x="385" y="115" text-anchor="middle">👤 PO</text>
+          <rect x="450" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="url(#g)"/>
+          <text x="495" y="115" text-anchor="middle">🤖 Developer</text>
+          <rect x="560" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="#ffa46a"/>
+          <text x="605" y="115" text-anchor="middle">👤 Tech Lead</text>
+          <rect x="670" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="url(#g)"/>
+          <text x="715" y="115" text-anchor="middle">🤖 Test</text>
+          <rect x="780" y="90" width="90" height="40" rx="6" fill="#14161d" stroke="#ffa46a"/>
+          <text x="825" y="115" text-anchor="middle">👤 QA + PR</text>
+          <g stroke="currentColor" stroke-width="1.5" opacity=".5" fill="none">
+            <path d="M100,110 L120,110"/><path d="M210,110 L230,110"/><path d="M320,110 L340,110"/>
+            <path d="M430,110 L450,110"/><path d="M540,110 L560,110"/><path d="M650,110 L670,110"/>
+            <path d="M760,110 L780,110"/>
+          </g>
+        </g>
+      </svg>
+      <p class="how__note">Onay verilince sonraki adıma geçer. Reddedildiğinde bounded retry (max 3) ile ajan yeniden çalışır. Her karar audit log'a imzalı yazılır.</p>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Orkestra'yı farklı kılan 6 özellik</h2>
+      <div class="features__grid">
+        <article class="feature"><div class="feature__icon">🤖</div><h3>7 AI Ajan</h3><p>Intake · Analyst · Developer · Reviewer · Test-designer · Test-reviewer · Test-runner. Her biri variant'lı (mobile/web/backend).</p></article>
+        <article class="feature"><div class="feature__icon">👥</div><h3>6 İnsan Kapısı</h3><p>PO, Tech Lead, QA kritik kararlarda. SLA + backup person + eskalasyon.</p></article>
+        <article class="feature"><div class="feature__icon">🎛️</div><h3>4 Work Mode</h3><p>Full-auto · AI-assist · Human-lead · Human-only. Tek ticket'ta bile switch yapabilirsin.</p></article>
+        <article class="feature"><div class="feature__icon">🎓</div><h3>Knowledge Pack</h3><p>Ajan variant'ını kurumsal kurallarla eğit. Versiyonla, eski workflow'lar bozulmaz, 1-tık rollback.</p></article>
+        <article class="feature"><div class="feature__icon">🛡️</div><h3>4-Göz Kuralı</h3><p>Analiz onaylayan ≠ PR onaylayan. Hard enforce. Bypass yok.</p></article>
+        <article class="feature"><div class="feature__icon">📜</div><h3>Hash-chain Audit</h3><p>Her karar SHA-256 zincirli, imzalı. Sonradan değiştirilemez, tüm süreç denetlenebilir.</p></article>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <h2>Fiyatlar</h2>
+      <p class="pricing__sub">Kullanıcı başına değil — ticket başına düşen gerçek değer.</p>
+      <div class="pricing__grid">
+        <div class="tier">
+          <div class="tier__name">Starter</div>
+          <div class="tier__price">$299<span>/ay</span></div>
+          <ul class="tier__features">
+            <li>≤ 10 developer</li>
+            <li>100 ticket/ay</li>
+            <li>Bitbucket / GitHub</li>
+            <li>Email destek</li>
+          </ul>
+          <a href="#cta" class="btn btn--ghost" data-track="pricing-starter">Başla</a>
+        </div>
+        <div class="tier tier--featured">
+          <div class="tier__badge">En popüler</div>
+          <div class="tier__name">Growth</div>
+          <div class="tier__price">$899<span>/ay</span></div>
+          <ul class="tier__features">
+            <li>≤ 50 developer</li>
+            <li>500 ticket/ay</li>
+            <li>Knowledge Pack + eval</li>
+            <li>Slack + PagerDuty</li>
+            <li>24/5 destek</li>
+          </ul>
+          <a href="#cta" class="btn btn--primary" data-track="pricing-growth">Demo İste</a>
+        </div>
+        <div class="tier">
+          <div class="tier__name">Enterprise</div>
+          <div class="tier__price">Özel<span>teklif</span></div>
+          <ul class="tier__features">
+            <li>Sınırsız developer</li>
+            <li>Sınırsız ticket</li>
+            <li>On-prem / air-gapped</li>
+            <li>SSO + audit compliance</li>
+            <li>24/7 dedicated support</li>
+          </ul>
+          <a href="#cta" class="btn btn--ghost" data-track="pricing-enterprise">Bize Ulaş</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <blockquote>
+        <p>"Ticket → PR arasındaki review yükümüz %60 azaldı. 4-göz kuralı sayesinde production incident yok. Dev ekibimiz kod yazmaya odaklanıyor, review'a değil."</p>
+        <footer>— <strong>Selin K.</strong>, Engineering Manager, Fintek şirketi</footer>
+      </blockquote>
+    </section>
+
+    <section class="cta" id="cta">
+      <h2>Ürünü 30 dakikada kullanmaya başla</h2>
+      <p>E-postanı bırak, demo linkini ve kurulum rehberini gönderelim.</p>
+      <form class="cta__form" id="demo-form" novalidate>
+        <input type="email" required placeholder="sen@sirket.com" aria-label="E-posta adresi">
+        <button type="submit" class="btn btn--primary">Demo Linki Gönder</button>
+      </form>
+      <p class="cta__status" id="cta-status" aria-live="polite"></p>
+      <p class="cta__note">Kredi kartı istemiyoruz · 14 gün ücretsiz deneme · Self-hosted / Cloud seçenekleri</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2026 Jira AI Orkestra</div>
+    <div class="footer__links">
+      <a href="https://github.com/uguryldz/jiraai-web">GitHub</a>
+      <a href="#">Docs</a>
+      <a href="#">Güvenlik</a>
+      <a href="#">İletişim</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
