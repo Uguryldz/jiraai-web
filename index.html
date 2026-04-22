@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jira AI Orkestra — AI + insan birlikte, ticket'tan PR'a.">
+  <title>Jira AI Orkestra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__brand">🎬 Orkestra</div>
+    <a href="#features" class="nav__link">Özellikler</a>
+    <a href="#showcase" class="nav__link">Nasıl Çalışır</a>
+    <a href="#cta" class="nav__link nav__link--cta" aria-label="Demo linki iste">Demo İste</a>
+  </nav>
+
+  <section class="hero">
+    <h1 class="hero__title">Jira ticket'ından PR'a — <span class="accent">AI + insan birlikte</span></h1>
+    <p class="hero__subtitle">7 AI ajan · 6 insan onay kapısı · 4 work mode. Yazılım geliştirmenin %80'ini AI yapsın, sen karar kapılarında ol.</p>
+    <a href="#cta" class="btn btn--primary" aria-label="Demo linki iste">Ücretsiz Demo</a>
+  </section>
+
+  <section class="features" id="features">
+    <article class="feature"><div class="feature__icon">⚡</div><h3>Hızlı</h3><p>Ticket'tan PR'a 30 saniye. 15 adım Temporal workflow + bounded retry.</p></article>
+    <article class="feature"><div class="feature__icon">🛡️</div><h3>Güvenli</h3><p>4-göz kuralı, hash-chain audit, PII maskeleme, branch protection.</p></article>
+    <article class="feature"><div class="feature__icon">🎓</div><h3>Öğrenebilir</h3><p>Her ajan variant'lı (mobile/web/backend). Knowledge pack ile eğit, versiyonla, rollback.</p></article>
+  </section>
+
+  <section class="showcase" id="showcase">
+    <h2>Nasıl çalışır?</h2>
+    <ol class="showcase__steps">
+      <li>Jira'da ticket açılır → AI intake + analyst devreye girer</li>
+      <li>PO, Tech Lead, QA kritik noktalarda onay verir</li>
+      <li>Developer AI kod yazar, tests runner çalıştırır</li>
+      <li>CI gate + 4-göz sonrası PR merge için hazır</li>
+    </ol>
+    <div class="showcase__preview">📸 (Ekran görüntüsü yakında)</div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ürünü yakından gör</h2>
+    <p>E-postanı bırak, demo linkini gönderelim.</p>
+    <form class="cta__form" id="demo-form" novalidate>
+      <input type="email" required placeholder="sen@ornek.com" aria-label="E-posta adresiniz">
+      <button type="submit" class="btn btn--primary">Demo Linki Gönder</button>
+    </form>
+    <p class="cta__status" id="cta-status" aria-live="polite"></p>
+  </section>
+
+  <footer class="footer">
+    <div>© 2026 Jira AI Orkestra</div>
+    <div class="footer__links">
+      <a href="https://github.com/uguryldz/jiraai-web">GitHub</a>
+      <a href="#">Docs</a>
+      <a href="#">İletişim</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
